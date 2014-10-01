@@ -28,6 +28,10 @@ group :test do
   gem 'minitest-rails', '~> 2.1.0'
   gem 'minitest-rails-capybara', '~> 2.1.1'
 end
+
+group :test, :development do
+  gem 'byebug'
+end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -36,7 +40,3 @@ end
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]
-
