@@ -21,6 +21,7 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
+gem 'haml', '~> 4.0.5'
 
 group :development do
   gem 'spring'
