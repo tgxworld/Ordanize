@@ -30,9 +30,9 @@
 // $include-print-styles: true;
 // $include-html-global-classes: $include-html-classes;
 
-// Grid 
+// Grid
 
-// $include-html-block-grid-classes: $include-html-classes; 
+// $include-html-block-grid-classes: $include-html-classes;
 // $include-xl-html-grid-classes: false;
 
 // $row-width: rem-calc(1000);
@@ -41,13 +41,13 @@
 // Global
 
 // We use these to define default font weights
-// $font-weight-normal: normal !default
-// $font-weight-bold: bold !default
+$font-weight-normal: normal !default;
+$font-weight-bold: bold !default;
 
 // We use these to control various global styles
 // $body-bg: #fff;
 // $body-font-color: #222;
-// $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-family: "Roboto", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
 
@@ -60,7 +60,7 @@
 // $default-float: left;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
+$primary-color: #313447;
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
@@ -125,11 +125,11 @@
 
 // We use these to control header font styles
 // $header-font-family: $body-font-family;
-// $header-font-weight: $font-weight-normal;
+$header-font-weight: 100;
 // $header-font-style: normal;
 // $header-font-color: #222;
 // $header-line-height: 1.4;
-// $header-top-margin: .2rem;
+$header-top-margin: 0;
 // $header-bottom-margin: .5rem;
 // $header-text-rendering: optimizeLegibility;
 
@@ -152,7 +152,7 @@
 // These control how subheaders are styled.
 // $subheader-line-height: 1.4;
 // $subheader-font-color: scale-color($header-font-color, $lightness: 35%);
-// $subheader-font-weight: $font-weight-normal;
+$subheader-font-weight: 100;
 // $subheader-top-margin: .2rem;
 // $subheader-bottom-margin: .5rem;
 
@@ -1186,19 +1186,19 @@
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: #333;
-// $topbar-bg: $topbar-bg-color;
+// $topbar-bg-color: white;
+$topbar-bg: white;
 
 // Height and margin
-// $topbar-height: 45px;
+$topbar-height: 80px;
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
-// $topbar-title-weight: $font-weight-normal;
-// $topbar-title-font-size: rem-calc(17);
+$topbar-title-weight: $font-weight-bold;
+$topbar-title-font-size: rem-calc(30);
 
 // Style the top bar dropdown elements
-// $topbar-dropdown-bg: #333;
+$topbar-dropdown-bg: white;
 // $topbar-dropdown-link-color: #fff;
 // $topbar-dropdown-link-bg: #333;
 // $topbar-dropdown-link-weight: $font-weight-normal;
@@ -1207,21 +1207,21 @@
 // $topbar-dropdown-toggle-alpha: 0.4;
 
 // Set the link colors and styles for top-level nav
-// $topbar-link-color: #fff;
+$topbar-link-color: $primary-color;
 // $topbar-link-color-hover: #fff;
 // $topbar-link-color-active: #fff;
 // $topbar-link-color-active-hover: #fff;
-// $topbar-link-weight: $font-weight-normal;
-// $topbar-link-font-size: rem-calc(13);
+$topbar-link-weight: 300;
+$topbar-link-font-size: rem-calc(17);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 // $topbar-link-bg: $topbar-bg;
 // $topbar-link-bg-color-hover: #555555;
-// $topbar-link-bg-hover: #272727;
+$topbar-link-bg-hover: $primary-color;
 // $topbar-link-bg-active: $primary-color;
 // $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
 // $topbar-link-font-family: $body-font-family;
 // $topbar-link-text-transform: none;
-// $topbar-link-padding: $topbar-height / 3;
+$topbar-link-padding: $topbar-height / 3;
 
 // $topbar-button-font-size: 0.75rem;
 // $topbar-button-top: 7px;
@@ -1236,8 +1236,8 @@
 // $topbar-menu-link-transform: uppercase;
 // $topbar-menu-link-font-size: rem-calc(13);
 // $topbar-menu-link-weight: $font-weight-bold;
-// $topbar-menu-link-color: #fff;
-// $topbar-menu-icon-color: #fff;
+$topbar-menu-link-color: $primary-color;
+$topbar-menu-icon-color: $primary-color;
 // $topbar-menu-link-color-toggled: #888;
 // $topbar-menu-icon-color-toggled: #888;
 

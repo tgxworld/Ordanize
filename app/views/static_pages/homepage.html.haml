@@ -1,2 +1,33 @@
+.medium-8.medium-centered.columns
+  .row
+    = render 'header'
+
 .row
-  = render 'header'
+  .homepage-main
+    %h1.text-center#home
+      = t('.main')
+
+.row
+  .homepage-blurb
+    .homepage-blurb-headers.text-center
+      %h1#features
+        = t('.features.header')
+
+      .medium-10.medium-centered.columns
+        %h3.subheader
+          = t('.features.blurb')
+
+.row
+  .homepage-main2
+    %h1.text-center
+      = t('.main2')
+
+.row
+  .homepage-blurb
+    .homepage-blurb-headers.text-center
+      %h1.text-center#pricing
+        = t('.pricing.title')
+
+      .medium-10.medium-centered.columns
+        %h3.subheader
+          = t('.pricing.blurb')

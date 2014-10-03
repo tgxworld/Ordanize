@@ -1,0 +1,14 @@
+.homepage-main {
+  background-image: image-url('homepage/main.jpg');
+  background-size: cover;
+  background-position: 50%;
+  height: 600px;
+
+  h1 {
+    font-size: 3.5rem;
+    color: white;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

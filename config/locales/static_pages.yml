@@ -1,0 +1,13 @@
+en:
+  static_pages:
+    homepage:
+      main: "\"So yeah, we help you to organize your preorders\""
+      features:
+        header: Organize your orders
+        blurb: >-
+          Ordanize is a platform for you to manage orders: Organize preorders,
+          track payment status, update buyers, everything in one place.
+      main2: Preorder Tool for the 21st Century
+      pricing:
+        title: Pricing
+        blurb: Coming Soon....

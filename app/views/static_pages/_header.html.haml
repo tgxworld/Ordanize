@@ -1,5 +1,24 @@
-%nav.top-bar{ data: { top_bar: '', role: 'navigation' } }
-  %ul.title-area
-    %li.name
-      %h1
-        = link_to 'Ordanize', root_path
+.fixed
+  %nav.top-bar{ role: 'navigation', data: { topbar: '' } }
+    %ul.title-area
+      %li.name
+        %h1
+          = link_to 'Ordanize', root_path
+
+      %li.toggle-topbar.menu-icon
+        = link_to '#' do
+          %span Menu
+
+    .top-bar-section
+      %ul.right
+        %li
+          = link_to 'Home', '#home'
+
+        %li
+          = link_to 'Features', '#features'
+
+        %li
+          = link_to 'Pricing', '#pricing'
+
+        %li
+          = link_to 'Login', '#'
