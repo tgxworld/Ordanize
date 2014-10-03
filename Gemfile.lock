@@ -66,6 +66,9 @@ GEM
     debugger-linecache (1.2.0)
     erubis (2.7.0)
     execjs (2.2.1)
+    foundation-rails (5.3.0.0)
+      railties (>= 3.1.0)
+      sass (>= 3.2.0)
     fssm (0.2.10)
     haml (4.0.5)
       tilt
@@ -164,6 +167,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.0.0)
   compass-rails (~> 1.1.7)
+  foundation-rails (= 5.3.0)
   haml (~> 4.0.5)
   jbuilder (~> 2.0)
   jquery-rails

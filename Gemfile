@@ -22,6 +22,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
 gem 'haml', '~> 4.0.5'
+gem 'foundation-rails', '5.3.0'
 gem 'compass-rails', '~> 1.1.7'
 
 group :development do
