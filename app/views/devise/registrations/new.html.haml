@@ -1,0 +1,38 @@
+.small-12.medium-6.medium-centered.columns
+  = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+    = field_set_tag 'Sign up' do
+      = devise_error_messages!
+
+      .row
+        = f.label :email
+        = f.email_field :email, autofocus: true
+
+      .row
+        = f.label :first_name
+        = f.text_field :first_name
+
+        = f.label :last_name
+        = f.text_field :last_name
+
+      .row
+        = f.label :password
+
+        - if @validatable
+          %i
+            = @minimum_password_length
+            characters minimum
+
+        = f.password_field :password, autocomplete: 'off'
+
+      .row
+        = f.label :password_confirmation
+        = f.password_field :password_confirmation, autocomplete: 'off'
+
+      .row
+        - if devise_mapping.rememberable?
+          = f.check_box :remember_me
+          = f.label :remember_me
+
+      = f.submit 'Sign up', class: 'button'
+
+  = render 'devise/shared/links'
