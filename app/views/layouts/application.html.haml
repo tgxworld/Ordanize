@@ -12,6 +12,7 @@
 
   %body
     .small-12.columns
+      = render 'layouts/header'
       = display_flash_messages
       = yield
       = javascript_include_tag 'application'

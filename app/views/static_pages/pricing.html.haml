@@ -1,0 +1,65 @@
+.row.text-center
+  %h1
+    %b
+      = t('.main')
+
+  %h2
+    = t('.main_sub')
+
+.row
+  .small-12.medium-4.columns
+    %section
+      %ul.pricing-table
+        %li.title
+          = t('.free.title')
+
+        %li.price
+          = t('.free.price')
+
+        %li.bullet-item
+          = t('.free.bullet_1')
+
+        %li.bullet-item
+          = t('.free.bullet_2')
+
+        %li.bullet-item
+          = t('.free.bullet_3')
+
+        %li.cta-button
+          = link_to 'Join now', '#', class: 'button'
+
+  .small-12.medium-4.columns
+    %section
+      %ul.pricing-table
+        %li.title
+          = t('.basic.title')
+
+        %li.price
+          = t('.basic.price')
+
+        %li.bullet-item
+          = t('.basic.bullet_1')
+
+        %li.bullet-item
+          = t('.basic.bullet_2')
+
+        %li.cta-button
+          = link_to 'Join now', '#', class: 'button'
+
+  .small-12.medium-4.columns
+    %section
+      %ul.pricing-table
+        %li.title
+          = t('.plus.title')
+
+        %li.price
+          = t('.plus.price')
+
+        %li.bullet-item
+          = t('.plus.bullet_1')
+
+        %li.bullet-item
+          = t('.plus.bullet_2')
+
+        %li.cta-button
+          = link_to 'Join now', '#', class: 'button'

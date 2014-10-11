@@ -11,3 +11,22 @@ en:
       pricing:
         title: Pricing
         blurb: Coming Soon....
+    pricing:
+      main: Zero Service Fees
+      main_sub: Ordanize is free to use for as long as you want
+      free:
+        title: Free
+        price: $0
+        bullet_1: 5 listings
+        bullet_2: Email support
+        bullet_3: No credit card required
+      basic:
+        title: Basic
+        price: $4.99
+        bullet_1: 10 listings
+        bullet_2: Email support
+      plus:
+        title: Plus
+        price: $9.99
+        bullet_1: 25 listings
+        bullet_2: Phone support

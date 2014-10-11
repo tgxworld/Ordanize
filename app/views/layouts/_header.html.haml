@@ -12,13 +12,9 @@
     .top-bar-section
       %ul.right
         %li
-          = link_to 'Home', '#home'
-
+          = link_to 'Home', root_path
         %li
-          = link_to 'Features', '#features'
-
-        %li
-          = link_to 'Pricing', '#pricing'
+          = link_to 'Pricing', pricing_path
 
         %li
           - if current_user

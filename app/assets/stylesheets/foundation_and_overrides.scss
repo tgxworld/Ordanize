@@ -127,7 +127,7 @@ $primary-color: #313447;
 // $header-font-family: $body-font-family;
 $header-font-weight: 100;
 // $header-font-style: normal;
-// $header-font-color: #222;
+$header-font-color: $primary-color;
 // $header-line-height: 1.4;
 $header-top-margin: 0;
 // $header-bottom-margin: .5rem;
@@ -845,24 +845,24 @@ $alert-bottom-margin: 0;
 // $price-table-border: solid 1px #ddd;
 
 // We use this to control the bottom margin of the pricing table
-// $price-table-margin-bottom: rem-calc(20);
+// $price-table-margin-bottom: rem-calc(30);
 
 // We use these to control the title styles
-// $price-title-bg: #333;
+$price-title-bg: $primary-color;
 // $price-title-padding: rem-calc(15 20);
 // $price-title-align: center;
 // $price-title-color: #eee;
 // $price-title-weight: $font-weight-normal;
-// $price-title-size: rem-calc(16);
+$price-title-size: rem-calc(18);
 // $price-title-font-family: $body-font-family;
 
 // We use these to control the price styles
 // $price-money-bg: #f6f6f6  ;
 // $price-money-padding: rem-calc(15 20);
 // $price-money-align: center;
-// $price-money-color: #333;
+// $price-money-color: $primary-color;
 // $price-money-weight: $font-weight-normal;
-// $price-money-size: rem-calc(32);
+$price-money-size: rem-calc(30);
 // $price-money-font-family: $body-font-family;
 
 
@@ -880,7 +880,7 @@ $alert-bottom-margin: 0;
 // $price-item-color: #333;
 // $price-item-padding: rem-calc(15);
 // $price-item-align: center;
-// $price-item-font-size: rem-calc(14);
+$price-item-font-size: rem-calc(18);
 // $price-item-weight: $font-weight-normal;
 // $price-item-bottom-border: dotted 1px #ddd;
 
