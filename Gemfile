@@ -33,8 +33,7 @@ group :development do
 end
 
 group :test do
-  gem 'minitest-rails', '~> 2.1.0'
-  gem 'minitest-rails-capybara', '~> 2.1.1'
+  gem 'capybara', '~> 2.4.3'
 end
 
 group :test, :development do
