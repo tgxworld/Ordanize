@@ -5,6 +5,12 @@ class ApplicationController < ActionController::Base
 
   before_action :configure_permitted_parameters, if: :devise_controller?
 
+  [:sign_in, :sign_up].each do |action|
+    define_method("after_#{action}_path_for") do |resource|
+      dashboard_user_path(resource)
+    end
+  end
+
   protected
 
   def configure_permitted_parameters

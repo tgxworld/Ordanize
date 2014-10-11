@@ -3,4 +3,10 @@ Rails.application.routes.draw do
 
   root 'static_pages#homepage'
   get '/pricing', to: 'static_pages#pricing'
+
+  resources :users do
+    member do
+      get 'dashboard'
+    end
+  end
 end
