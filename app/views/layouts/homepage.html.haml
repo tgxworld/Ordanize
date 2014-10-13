@@ -1,0 +1,18 @@
+!!! 5
+%html{ lang: 'en' }
+  %head
+    %meta{ charset: 'utf-8' }
+    %meta{ name: 'viewport', content: 'width=device-width, initial-scale=1.0' }
+
+    %title= Ordanize
+    = stylesheet_link_tag 'application', media: 'all'
+    = javascript_include_tag 'vendor/modernizr'
+    = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300italic,300,400italic,500,700,500italic,700italic,900,900italic'
+    = csrf_meta_tags
+
+  %body
+    .small-12
+      = render 'layouts/header'
+      = display_flash_messages
+      = yield
+      = javascript_include_tag 'application'

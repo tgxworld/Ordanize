@@ -1,12 +1,16 @@
 .homepage
   .row
-    .homepage-main
-      %h1.text-center#home
-        = t('.main')
+    .homepage-main.text-center
+      .homepage-main-blurb.lay-vertical-center
+        %h1
+          = t('.main')
+
+        = link_to t('.start_now'), new_user_registration_path,
+          class: 'button large radius'
 
   .row
     .homepage-blurb
-      .homepage-blurb-headers.text-center
+      .lay-vertical-center.text-center
         %h1
           = t('.features.header')
 
@@ -16,5 +20,6 @@
 
   .row
     .homepage-main2
-      %h1.text-center
-        = t('.main2')
+      .lay-vertical-center
+        %h1.text-center
+          = t('.main2')
