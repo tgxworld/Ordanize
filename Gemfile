@@ -35,6 +35,7 @@ end
 
 group :test do
   gem 'capybara', '~> 2.4.3'
+  gem 'launchy'
 end
 
 group :test, :development do

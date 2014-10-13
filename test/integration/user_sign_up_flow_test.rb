@@ -1,4 +1,4 @@
-require 'test_helper'
+require 'integration/integration_helper'
 
 class UserSignUpFlowTest < ActionDispatch::IntegrationTest
   test 'User should be redirected to dashboard after signing up' do
