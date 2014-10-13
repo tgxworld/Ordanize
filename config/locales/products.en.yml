@@ -1,0 +1,10 @@
+en:
+  products:
+    new:
+      title: Add a new product
+    create:
+      success_message: You have successfully created "%{product}".
+    edit:
+      title: Edit product
+    update:
+      success_message: You have successfully updated "%{product}".

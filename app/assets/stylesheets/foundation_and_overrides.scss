@@ -65,7 +65,7 @@ $primary-color: #313447;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
-// $info-color: #a0d3e8;
+$info-color: #a0d3e8;
 
 // We use these to make sure border radius matches unless we want it different.
 // $global-radius: 3px;
@@ -179,8 +179,8 @@ $subheader-font-weight: 100;
 // We use these to style anchors
 // $anchor-text-decoration: none;
 // $anchor-text-decoration-hover: none;
-// $anchor-font-color: $primary-color;
-// $anchor-font-color-hover: scale-color($primary-color, $lightness: -14%);
+$anchor-font-color: $primary-color;
+$anchor-font-color-hover: scale-color(white, $lightness: -50%);
 
 // We use these to style the <hr> element
 // $hr-border-width: 1px;

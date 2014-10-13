@@ -25,6 +25,7 @@ gem 'haml', '~> 4.0.5'
 gem 'foundation-rails', '5.3.0'
 gem 'compass-rails', '~> 1.1.7'
 gem 'devise', '~> 3.4.0'
+gem 'simple_form', '~> 3.0.0'
 
 group :development do
   gem 'spring'

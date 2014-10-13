@@ -11,8 +11,10 @@
     = csrf_meta_tags
 
   %body
-    .small-12.columns
+    .small-12
       = render 'layouts/header'
       = display_flash_messages
-      = yield
-      = javascript_include_tag 'application'
+
+      .large-7.large-centered.columns
+        = yield
+        = javascript_include_tag 'application'

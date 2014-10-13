@@ -20,5 +20,8 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  actions: Actions
+  dashboard: Dashboard
   log_in: Log in
+  log_out: Log out
   sign_up: Sign up

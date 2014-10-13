@@ -8,5 +8,7 @@ Rails.application.routes.draw do
     member do
       get 'dashboard'
     end
+
+    resources :products, except: [:index]
   end
 end

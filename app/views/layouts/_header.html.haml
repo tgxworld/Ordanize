@@ -16,8 +16,12 @@
         %li
           = link_to 'Pricing', pricing_path
 
-        %li
-          - if current_user
-            = link_to 'Logout', destroy_user_session_path, method: :delete
-          - else
-            = link_to 'Login', new_user_session_path
+        - if current_user
+          %li
+            = link_to t('dashboard'), dashboard_user_path(current_user)
+
+          %li
+            = link_to t('log_out'), destroy_user_session_path, method: :delete
+        - else
+          %li
+            = link_to t('log_in'), new_user_session_path

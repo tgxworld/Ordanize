@@ -1,0 +1,33 @@
+= simple_form_for [user, product] do |f|
+  .row
+    = f.input :title
+
+  .row
+    = f.input :description, input_html: { rows: 10 }
+
+  .row
+    = f.input :shipping_policy, input_html: { rows: 10 }
+
+  .row.medium-6.columns
+    .row
+      = f.label :price
+
+    .row.collapse
+      .small-2.columns
+        %span.prefix
+          $
+      .small-10.columns
+        = f.input :price, label: false
+
+  .row.medium-6.columns
+    .row
+      = f.label :quantity
+
+    .row.collapse
+      .small-10.columns
+        = f.input :quantity, label: false
+      .small-2.columns
+        %span.postfix
+          units
+
+  = f.submit class: 'button radius expand'

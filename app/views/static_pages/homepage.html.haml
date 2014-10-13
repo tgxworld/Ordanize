@@ -1,29 +1,30 @@
-.row
-  .homepage-main
-    %h1.text-center#home
-      = t('.main')
+.homepage
+  .row
+    .homepage-main
+      %h1.text-center#home
+        = t('.main')
 
-.row
-  .homepage-blurb
-    .homepage-blurb-headers.text-center
-      %h1
-        = t('.features.header')
+  .row
+    .homepage-blurb
+      .homepage-blurb-headers.text-center
+        %h1
+          = t('.features.header')
 
-      .medium-10.medium-centered.columns
-        %h3.subheader
-          = t('.features.blurb')
+        .medium-10.medium-centered.columns
+          %h3.subheader
+            = t('.features.blurb')
 
-.row
-  .homepage-main2
-    %h1.text-center
-      = t('.main2')
-
-.row
-  .homepage-blurb
-    .homepage-blurb-headers.text-center
+  .row
+    .homepage-main2
       %h1.text-center
-        = t('.pricing.title')
+        = t('.main2')
 
-      .medium-10.medium-centered.columns
-        %h3.subheader
-          = t('.pricing.blurb')
+  .row
+    .homepage-blurb
+      .homepage-blurb-headers.text-center
+        %h1.text-center
+          = t('.pricing.title')
+
+        .medium-10.medium-centered.columns
+          %h3.subheader
+            = t('.pricing.blurb')

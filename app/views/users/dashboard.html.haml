@@ -1,0 +1,31 @@
+.row
+  = link_to 'Add a product', new_user_product_path(@user),
+    class: 'button expand radius mt-2'
+
+.row
+  %table.lay-full-width
+    %thead
+      %tr
+        %th
+          = Product.human_attribute_name(:title)
+
+        %th
+          = Product.human_attribute_name(:price)
+
+        %th
+          = t('actions')
+
+    %tbody
+      - @products.each do |product|
+        %tr
+          %td
+            = link_to product.title, user_product_path(@user, product),
+              class: 'hover'
+
+          %td
+            $
+            = product.price
+
+          %td
+            = link_to t('products.edit.title'),
+              edit_user_product_path(@user, product), class: 'button tiny success'
