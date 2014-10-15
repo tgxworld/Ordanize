@@ -1,5 +1,7 @@
 en:
   products:
+    index:
+      empty: You've not created any products.
     new:
       title: Add a new product
     create:

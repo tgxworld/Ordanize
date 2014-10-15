@@ -16,16 +16,22 @@
           = t('actions')
 
     %tbody
-      - @products.each do |product|
+      - if @products.empty?
         %tr
-          %td
-            = link_to product.title, user_product_path(@user, product),
-              class: 'hover'
+          %td{ colspan: 3 }
+            .alert-box.info.radius
+              = t('products.index.empty')
+      - else
+        - @products.each do |product|
+          %tr
+            %td
+              = link_to product.title, user_product_path(@user, product),
+                class: 'hover'
 
-          %td
-            $
-            = product.price
+            %td
+              $
+              = product.price
 
-          %td
-            = link_to t('products.edit.title'),
-              edit_user_product_path(@user, product), class: 'button tiny success'
+            %td
+              = link_to t('products.edit.title'),
+                edit_user_product_path(@user, product), class: 'button tiny success'
