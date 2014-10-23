@@ -25,8 +25,7 @@
         - @products.each do |product|
           %tr
             %td
-              = link_to product.title, user_product_path(@user, product),
-                class: 'hover'
+              = link_to product.title, product_path(product), class: 'hover'
 
             %td
               $

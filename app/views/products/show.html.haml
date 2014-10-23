@@ -1,2 +1,113 @@
-%h1.text-center
+- content_for :head do
+  %meta{ property: 'og:title', content: "#{@product.title} - $#{@product.price}" }
+  %meta{ property: 'og:url', content: request.url }
+  %meta{ property: 'og:image', content: 'https://trello-attachments.s3.amazonaws.com/544876480a65d8bf7e74c137/600x809/bd352b7336cd20d7419e7c8c7c7b4447/trello1814980357.jpg.jpeg.jpg' }
+  %meta{ property: 'og:description', content: @product.description }
+
+%h1.text-center{ style: 'font-weight: bold;' }
   = @product.title
+
+%h2.text-center{ style: 'font-weight: bold; color: #FF9000;' }
+  = "$#{@product.price}"
+
+.text-center
+  .product-image= image_tag 'https://trello-attachments.s3.amazonaws.com/544876480a65d8bf7e74c137/600x809/bd352b7336cd20d7419e7c8c7c7b4447/trello1814980357.jpg.jpeg.jpg', style: "height: 25em;"
+
+.row.item-description
+  %h3{ style: 'margin-top: 1em;' }
+    Description
+
+  %p
+    = @product.description
+
+  %h3{ style: 'margin-top: 1em;' }
+    Order Information
+
+  %p
+    Payment through bank transfer.
+    %br
+    Item will be sent via local courier once payment has been received.
+
+  = link_to '#', class: 'button expand radius', style: 'background-color: #FF9000',
+    data: { reveal_id: 'modal' } do
+
+    = icon('shopping-cart', 'Order now')
+
+  #modal.reveal-modal{ data: { reveal: '' } }
+    %h1 Payment
+
+    %hr
+
+    %p
+      You will be redirected to bank transfer
+      %strong= "$#{@product.price}"
+      This amount will be
+      %strong securely
+      held by Ordanize until you have received the product.
+
+    = link_to 'Continue', 'http://goo.gl/NEQ7FO', class: 'button raduis tiny', style: 'background-color: #FF9000'
+    = link_to '&#215;'.html_safe, '#?redirect=true', class: 'close-reveal-modal'
+
+.user-details.text-center
+  .row
+    %h1
+      Seller Profile
+
+  .row
+    = image_tag 'https://scontent-a-hkg.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/p417x417/1075783_10151524373786994_1267839644_n.jpg?oh=5234c4a57b03ef6677b1e35da7bfae65&oe=54F09C9E', style: 'width: 10em; border-radius: 5em;'
+
+  .row
+    %h1
+      Guo Xiang
+
+      %ul.no-bullet
+        %li
+          = icon('check-circle-o', 'Verified NRIC', class: 'fa-lg', style: 'color: #92CD00;')
+
+        %li
+          = icon('check-circle-o', 'Verified Email', class: 'fa-lg', style: 'color: #92CD00;')
+
+        %li
+          = icon('check-circle-o', 'Verified Phone Number', class: 'fa-lg', style: 'color: #92CD00;')
+
+        %li
+          = icon('check-circle-o', 'Verified Bank Account', class: 'fa-lg', style: 'color: #92CD00;')
+
+.row
+  = render 'disqus'
+
+:css
+  .top-bar {
+    background: #313447;
+    margin-bottom: 2em;
+  }
+
+  .top-bar .name h1 a {
+    color: white;
+  }
+
+  .user-details {
+    background-color: #313447;
+  }
+
+  .user-details h1 {
+    color: white;
+  }
+
+- content_for :foot do
+  :javascript
+    jQuery(function($) {
+      $("[data-reveal-id='modal']").click(function() {
+        $.ajax({
+          type: 'get',
+          url: 'http://goo.gl/t9RV0a'
+        })
+      })
+
+      $(".close-reveal-modal").click(function() {
+        $.ajax({
+          type: 'get',
+          url: 'http://goo.gl/cdPX9b'
+        })
+      })
+    })

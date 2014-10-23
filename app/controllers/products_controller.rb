@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
-  before_action :authenticate_user!
+  before_action :authenticate_user!, except: [:show]
+  layout 'mock', only: :show
 
   def new
     @user = find_user_by_id
@@ -36,6 +37,10 @@ class ProductsController < ApplicationController
   end
 
   def show
+    if params[:redirect]
+      flash.now[:alert] = 'O Bumps! The item has already been sold.'
+    end
+
     @product = find_product_by_id
   end
 
